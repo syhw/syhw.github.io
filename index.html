@@ -1,24 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Links & Microblog</title>
+
+  <style>
+    /* ----------  Base layout & typography  ---------- */
+    :root {
+      --max-width: 720px;
+      --link-color: #0366d6;
+    }
+
+    body {
+      font-family: Menlo, Monaco, monospace;
+      line-height: 1.6;
+      margin: 2rem auto;
+      max-width: var(--max-width);
+      padding: 0 1rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin: 2rem 0 0.75rem;
+    }
+
+    /* ----------  Links  ---------- */
+    a {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ----------  Micro‑posts  ---------- */
+    .post {
+      margin: 1.25rem 0;
+    }
+    .post__date {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
 <body>
+  <!-- <h1>Welcome aboard!</h1> -->
 
-    <!--<h1 style="font-family: Helvetica, sans-serif">Welcome aboard!</h1>-->
-    <h1 style="font-family: Menlo, Monaco, monospace">Just some links</h1>
-    <p style="font-family: Menlo, Monaco, monospace"><a href="https://twitter.com/syhw">Twitter</a>, <a href="https://pinboard.in/u:syhw">Pinboard</a>, <a href="Gabriel_Synnaeve_CV.pdf">Resumé</a>, <a href="https://scholar.google.com/citations?user=wN9rBkcAAAAJ&hl=en&oi=ao">Google Scholar</a></p>
-    <h1 style="font-family: Menlo, Monaco, monospace">Microblog</h1>
-    <p style="font-family: Menlo, Monaco, monospace">[July 23rd 2025] Research, FOMO, strong teams, focus<p>
-<p> A few words about something that feels natural to those of us who had the chance and luxury to work in research with beautiful teams, but maybe less obvious to juniors.<p>
-<p> Research is about trying very hard at solving a problem, 4/5 times until you're convinced it can't work and it's not because you left a stone unturned. The balance between sane and insane grit is tenuous, and impacts the frequency at which you take swings with your 1/5th batting average. Taste is picking problems better, through experience and intention to improve, you can bring this batting average to 1/4. Thus speed of iteration keeps mattering. One may be tempted to take swings in parallel, but the "Eureka under the shower" is true, and one can't hold too many active problems in ones' head.<p>
-<p> FOMO is about not working on a problem you think is very interesting and relevant to solve. For smart and curious people, there is no remedy to FOMO. Some things that worsen FOMO, though, are working on too many problems at once and not being convinced you gave your best to each of them. Did I fail to crack those problems myself or were they uncrackable with today's science and technology? Somebody else cracked it before me (never a big issue in the grand scheme of things!), couldn't have I gotten there first if I focused?<p>
-<p> Strong teams consist in strong individuals who are ready to jump to help their teammates or call for help, when really needed. The balance between constant firefighting and strong teamwork is tenuous, but teamwork really makes the dream work. Strong teams are one way to alleviate FOMO. If you know that your colleagues will call for help reeling a big fish, you should have less FOMO. If you know you can count on your colleagues to help reel fishes that are too big for you alone, you should have less FOMO.<p>
-<p> Focus is thus an ally of teamwork and a strong counter to FOMO. It's quite counterintuitive. It doesn't mean it is unimportant to know what your fellow teammates are working on, and be able to form an opinion and give advice. If you're junior focus on your one or two problems, learn as much as possible for your problems and your team. Your problems are going to change soon enough.
-</p>
-    <p style="font-family: Menlo, Monaco, monospace">[June 9th 2025] The code <b>is</b> the chain-of-thought for programming. So successive iterations over the code <b>are</b> the reasoning tokens for programming.
-</p>
-    <p style="font-family: Menlo, Monaco, monospace">[June 9th 2025] Neural concrete interpretation at scale is indistinguishable from neural <a href="https://www.di.ens.fr/~cousot/AI/IntroAbsInt.html">abstract interpretation</a>.
-</p>
-    <p style="font-family: Menlo, Monaco, monospace">[July 24th 2022] List of all my papers and tech reports <a href="papers.html">here</a></p>
-    <p style="font-family: Menlo, Monaco, monospace">[June 14th 2022] Hello World!</p>
+  <h1>Just some links</h1>
+  <p>
+    <a href="https://twitter.com/syhw">Twitter</a>,
+    <a href="https://pinboard.in/u:syhw">Pinboard</a>,
+    <a href="Gabriel_Synnaeve_CV.pdf">Resumé</a>,
+    <a href="https://scholar.google.com/citations?user=wN9rBkcAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a>
+  </p>
 
+  <h1>Microblog</h1>
+
+  <section class="post">
+    <p class="post__date">July 23 2025 — Research, FOMO, strong teams, focus</p>
+    <p>
+      A few words about something that feels natural to those of us who had the chance
+      and luxury to work in research with beautiful teams, but maybe less obvious to
+      juniors.
+    </p>
+    <p>
+      Research is about trying very hard at solving a problem, 4/5 times until
+      you're convinced it can't work and it's not because you left a stone unturned.
+      The balance between sane and insane grit is tenuous, and impacts the frequency
+      at which you take swings with your 1/5 batting average. Taste is picking
+      problems better; through experience and intention to improve, you can bring this
+      batting average to 1/4. Thus speed of iteration keeps mattering. One may be
+      tempted to take swings in parallel, but the “Eureka under the shower” is real,
+      and one can't hold too many active problems in one's head.
+    </p>
+    <p>
+      FOMO is about not working on a problem you think is very interesting and
+      relevant to solve. For smart and curious people, there is no remedy to FOMO.
+      Some things that worsen FOMO, though, are working on too many problems at once
+      and not being convinced you gave your best to each of them. Did I fail to crack
+      those problems myself or were they uncrackable with today's science and
+      technology? Somebody else cracked it before me (never a big issue in the grand
+      scheme of things!); couldn't I have gotten there first if I’d focused?
+    </p>
+    <p>
+      Strong teams consist of strong individuals who are ready to jump to help their
+      teammates—or call for help—when really needed. The balance between constant
+      firefighting and strong teamwork is tenuous, but teamwork really makes the dream
+      work. Strong teams are one way to alleviate FOMO. If you know your colleagues
+      will call for help reeling a big fish, you should have less FOMO. If you know
+      you can count on your colleagues to help reel fishes that are too big for you
+      alone, you should have less FOMO.
+    </p>
+    <p>
+      Focus is thus an ally of teamwork and a strong counter to FOMO. It's
+      counter‑intuitive. It doesn't mean it is unimportant to know what your fellow
+      teammates are working on and be able to form an opinion and give advice. If
+      you're junior, focus on your one or two problems, learn as much as possible for
+      your problems and your team. Your problems are going to change soon enough.
+    </p>
+  </section>
+
+  <section class="post">
+    <p class="post__date">June 9 2025 — The code <b>is</b> the chain‑of‑thought for programming</p>
+    <p>
+      Successive iterations over the code <b>are</b> the reasoning tokens for
+      programming.
+    </p>
+  </section>
+
+  <section class="post">
+    <p class="post__date">June 9 2025 — Neural concrete interpretation at scale</p>
+    <p>
+      Neural concrete interpretation at scale is indistinguishable from neural
+      <a href="https://www.di.ens.fr/~cousot/AI/IntroAbsInt.html">abstract
+      interpretation</a>.
+    </p>
+  </section>
+
+  <section class="post">
+    <p class="post__date">July 24 2022 — Papers & tech reports</p>
+    <p>
+      List of all my papers and tech reports <a href="papers.html">here</a>.
+    </p>
+  </section>
 </body>
 </html>
